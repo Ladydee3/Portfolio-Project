@@ -3,95 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, section {
-            padding: 20px;
-            text-align: center;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 50px 20px;
-        }
-        nav {
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        .button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 5px;
-        }
-        .features img {
-            max-width: 100%;
-            height: auto;
-        }
-        .about {
-            background-color: #f9f9f9;
-        }
-        .profile-links a {
-            display: inline-block;
-            margin: 0 10px;
-        }
-    </style>
+    <title>Ubuntu Community Outreach</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Link to your CSS -->
 </head>
 <body>
+    <header>
+        <h1>Welcome to Our Nonprofit Website</h1>
+        <h2>Ubuntu Community Outreach</h2>
+        <p>Empowering communities through compassion and action.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#donate">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <nav>
-        <a href="#intro">Home</a>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-    </nav>
-    <div id="intro">
-        <h1>My Portfolio Project</h1>
-        <p>Building the future of web development</p>
-        <a href="https://link-to-your-deployed-app.com" class="button">View Project</a>
-    </div>
-</header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Empowering communities, one step at a time.</p>
+    </section>
 
-<section id="features" class="features">
-    <h2>Key Features</h2>
-    <div>
-        <h3>Feature 1</h3>
-        <img src="link-to-image1.jpg" alt="Feature 1">
-        <p>Description of Feature 1.</p>
-    </div>
-    <div>
-        <h3>Feature 2</h3>
-        <img src="link-to-image2.jpg" alt="Feature 2">
-        <p>Description of Feature 2.</p>
-    </div>
-    <div>
-        <h3>Feature 3</h3>
-        <img src="link-to-image3.jpg" alt="Feature 3">
-        <p>Description of Feature 3.</p>
-    </div>
-</section>
+    <footer>
+        <p>© 2024 Nonprofit Organization. All rights reserved.</p>
+    </footer>
 
-<section id="about" class="about">
-    <h2>About the Project</h2>
-    <p>This project was inspired by my passion for coding and the need to create something impactful. It took several months of hard work and dedication to bring this project to life.</p>
-    <p>This is a Portfolio Project for <a href="https://www.holbertonschool.com">Holberton School</a>.</p>
-    <div class="profile-links">
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-        <a href="https://github.com/your-profile" target="_blank">GitHub</a>
-        <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
-    </div>
-    <p><a href="https://github.com/your-repo" target="_blank">GitHub Repository</a></p>
-</section>
-
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script> <!-- Link to your JavaScript -->
 </body>
 </html>
+
