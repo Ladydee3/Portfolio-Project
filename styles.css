@@ -1,111 +1,135 @@
-/* Reset some default browser styles */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    padding: 20px;
 }
 
-/* Header and Navigation Styles */
+/* Header */
 .header {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
 .navbar a {
-    color: white;
-    margin: 0 15px;
+    color: #fff;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    background-color: #555;
 }
 
-/* Section Styles */
-section {
-    padding: 50px;
+/* Home Section */
+#home {
+    background: #007bff;
+    color: white;
+    padding: 50px 20px;
     text-align: center;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#about, #features, #contact {
-    margin: 50px auto;
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* Sections Styling */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p, ul {
+    font-size: 1.1em;
+    margin-bottom: 20px;
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: disc;
+    padding-left: 40px;
 }
 
 ul li {
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
-/* Contact Form Styles */
+/* Contact Form */
 form {
-    display: inline-block;
-    text-align: left;
-    max-width: 400px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 input, textarea {
-    width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    max-width: 200px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
-/* Mobile Responsive Styles */
+/* Responsive Menu Icon */
 .icon {
     display: none;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar a {
-        display: none;
-    }
-    
-    .navbar.responsive a {
         display: block;
-        text-align: left;
+        text-align: center;
+        padding: 10px;
     }
-    
+
     .icon {
         display: block;
-        font-size: 24px;
-        color: white;
-        float: right;
-        margin-right: 15px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
     }
 }
 
