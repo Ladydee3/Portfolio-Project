@@ -7,28 +7,52 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
+    <!-- Header Section with Navigation -->
     <header class="header">
         <nav class="navbar">
             <a href="#about">About</a>
             <a href="#features">Features</a>
             <a href="#contact">Contact</a>
-            <!-- Add more links as needed -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
         </nav>
     </header>
 
+    <!-- About Section -->
     <section id="about">
-        <!-- About content here -->
+        <h2>About Us</h2>
+        <p>Ubuntu Community Outreach empowers communities, one step at a time, through compassion and action. We provide tools and resources for nonprofits to thrive.</p>
     </section>
 
+    <!-- Features Section -->
     <section id="features">
-        <!-- Features content here -->
+        <h2>Features</h2>
+        <p>Our platform offers powerful, customizable tools for nonprofits, including:</p>
+        <ul>
+            <li>Donation Processing</li>
+            <li>Volunteer Sign-ups</li>
+            <li>Event Calendars</li>
+            <li>Impact Tracking Tools</li>
+        </ul>
     </section>
 
+    <!-- Contact Section with Form -->
     <section id="contact">
-        <!-- Contact content here -->
+        <h2>Contact Us</h2>
+        <form action="/submit-contact-form" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
-    
-    <!-- More sections as needed -->
+
+    <script src="scripts.js"></script> <!-- Link to your JS file -->
 </body>
 </html>
 

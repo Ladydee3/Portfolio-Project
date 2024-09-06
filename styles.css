@@ -1,0 +1,111 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation Styles */
+.header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about, #features, #contact {
+    margin: 50px auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Contact Form Styles */
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Mobile Responsive Styles */
+.icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        display: none;
+    }
+    
+    .navbar.responsive a {
+        display: block;
+        text-align: left;
+    }
+    
+    .icon {
+        display: block;
+        font-size: 24px;
+        color: white;
+        float: right;
+        margin-right: 15px;
+    }
+}
+
