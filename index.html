@@ -3,94 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Non-profit organization working to empower communities through compassion and action.">
     <title>Ubuntu Community Outreach</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header and Navigation Bar -->
-    <header class="header">
-        <nav class="navbar" id="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#features">Features</a>
-            <a href="#services">Services</a>
-            <a href="#resources">Resources</a>
-            <a href="#contact">Contact Us</a>
-            <!-- This is the icon for mobile view toggle -->
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
-        </nav>
+    <header>
+        <h1>Ubuntu Community Outreach</h1>
+        <p>Empowering community through compassion and action</p>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Ubuntu Community Outreach</h1>
-            <p>Empowering communities through compassion and action.</p>
-        </div>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+        </ul>
+    </nav>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Ubuntu Community Outreach empowers communities, one step at a time, through compassion and action. We provide tools and resources for nonprofits to thrive.</p>
-    </section>
+    <main>
+        <section id="home">
+            <h2>Welcome to Ubuntu Community Outreach</h2>
+            <p>We are dedicated to making a positive impact in the community by connecting volunteers and donors to meaningful causes.</p>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Features</h2>
-        <div class="features-list">
-            <div class="feature-item">
-                <h3>Donation Processing</h3>
-                <p>Manage donations seamlessly with our integrated tools.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Volunteer Sign-ups</h3>
-                <p>Sign up volunteers with ease and track their involvement.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Event Calendars</h3>
-                <p>Organize and display events effectively.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Impact Tracking Tools</h3>
-                <p>Measure and showcase your organization's impact.</p>
-            </div>
-        </div>
-    </section>
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Ubuntu Community Outreach is a non-profit organization focused on empowering communities through compassion, action, and support. We partner with local charities, organizations, and individuals to provide resources where they are most needed.</p>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Services</h2>
-        <p>Discover how our holistic, story-based approach to web design attracts traffic that converts into supporters. We offer tailored solutions for Christian nonprofits and churches to make your digital presence effective and engaging.</p>
-        <a href="#contact" class="cta-button">Book a Call</a>
-    </section>
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you. Reach out to us for any inquiries, partnership opportunities, or ways you can get involved.</p>
+            <a href="mailto:info@ubuntuoutreach.org" class="btn">Email Us</a>
+        </section>
 
-    <!-- Resources Section -->
-    <section id="resources">
-        <h2>Resources</h2>
-        <p>Get your free website checklist and learn how we can help your ministry make digital work for you. Our resources are designed to help you optimize your online presence and connect with your audience.</p>
-        <a href="#" class="cta-button">Download Your Free Website Checklist</a>
-    </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for our latest events where you can get involved in making a difference.</p>
+        </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="/submit-contact-form" method="POST" onsubmit="return validateForm()">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+        <section id="donate">
+            <h2>Donate</h2>
+            <p>Your donations help us continue to support and empower the community. Every contribution, no matter how small, makes a huge impact.</p>
+            <a href="#donate-form" class="btn">Donate Now</a>
+        </section>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+        <section id="volunteer">
+            <h2>Become a Volunteer</h2>
+            <p>Join our team of passionate volunteers who are making a difference every day. Sign up to help in various initiatives we support.</p>
+            <a href="#volunteer-form" class="btn">Sign Up to Volunteer</a>
+        </section>
+    </main>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Linking the script.js -->
-    <script src="js/scripts.js"></script>
+    <footer>
+        <p>&copy; 2024 Ubuntu Community Outreach. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
