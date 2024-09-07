@@ -9,13 +9,15 @@
 <body>
     <!-- Header and Navigation Bar -->
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="#home">Home</a>
             <a href="#about">About Us</a>
             <a href="#features">Features</a>
             <a href="#services">Services</a>
             <a href="#resources">Resources</a>
             <a href="#contact">Contact Us</a>
+            <!-- This is the icon for mobile view toggle -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
         </nav>
     </header>
 
@@ -73,7 +75,7 @@
     <!-- Contact Us Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form action="/submit-contact-form" method="POST">
+        <form action="/submit-contact-form" method="POST" onsubmit="return validateForm()">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
 
@@ -87,6 +89,7 @@
         </form>
     </section>
 
+    <!-- Linking the script.js -->
     <script src="scripts.js"></script>
 </body>
 </html>
