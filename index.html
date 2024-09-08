@@ -81,6 +81,28 @@
         .btn:hover {
             background-color: #45a049;
         }
+
+        /* Form styling */
+        form {
+            margin-top: 20px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -126,12 +148,35 @@
             <h2>Donate</h2>
             <p>Your donations help us continue to support and empower the community. Every contribution, no matter how small, makes a huge impact.</p>
             <a href="#donate-form" class="btn">Donate Now</a>
+
+            <!-- Donation Form -->
+            <form id="donate-form" action="process_donation.php" method="post">
+                <h3>Make a Donation</h3>
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <input type="submit" value="Donate">
+            </form>
         </section>
 
         <section id="volunteer">
             <h2>Become a Volunteer</h2>
             <p>Join our team of passionate volunteers who are making a difference every day. Sign up to help in various initiatives we support.</p>
             <a href="#volunteer-form" class="btn">Sign Up to Volunteer</a>
+
+            <!-- Volunteer Form -->
+            <form id="volunteer-form" action="process_volunteer.php" method="post">
+                <h3>Volunteer Signup</h3>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Why do you want to volunteer?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Sign Up">
+            </form>
         </section>
     </main>
 
